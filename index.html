@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <title>The ultimate Quiz</title>
 </head>
 <body>
+  <div class="container">
+    <div id="home" class="flex-center flex-column">
     <h1>The ultimate Quiz</h1>
     
-    <script src="game.js"></script>
+    <container class="choose"></container>
+    <form  class="flex-center flex-column" id="form1" action="game.html" method="get">
+        
+        <div class="form-group">
+          <label for="category">Choose your category:</label>
+          <select class="form-control" id="category" name="category" placeholder="category">
+            <option value="devops">DevOps</option>
+            <option value="networking">Networking</option>
+            <option value="programming">Programming</option>
+            <option value="cloud">Cloud</option>
+            <option value="linux">Linux</option>
+          </select> <br> <br>
+
+        </div>
+        <h4>Choose your difficulty:</h4> <br>
+        <div class="form-check form-check-inline difficulty">
+            
+            <input class="form-check-input" type="radio" name="difficulty" id="difficulty" value="easy">
+            <label class="form-check-label" for="inlineRadio1">Easy</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="difficulty" id="difficulty" value="medium">
+            <label class="form-check-label" for="inlineRadio2">Medium</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="difficulty" id="difficulty" value="hard">
+            <label class="form-check-label" for="inlineRadio2">Hard</label>
+          </div>
+          <div class="form-group row limit">
+            <label for="limit" class="col-sm-4 col-form-label">How many questiones do you want?</label>
+            <div class="col-sm-4">
+              <input type="number" name="limit" class="form-control" id="Limit">
+            </div>
+        
+     
+      <div class="play text-center">
+          <container class="play">
+        <input class="btn goto" type="submit">
+        <a class="btn goto" href="highscores.html">Show High Scores</a>
+    </container>
+      </div>
+    </form>
+    </div>
+  </div>
 </body>
 </html>

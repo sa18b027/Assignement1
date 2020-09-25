@@ -1,3 +1,44 @@
+body {
+    background-image: url(banner.jpg);
+}
+#home {
+    background-color: azure;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 h1 {
     color: #56a5eb; 
+}
+/* BUTTONS */
+.btn {
+    font-size: 1.8rem;
+    padding: 4 2;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border: 0.5 solid #56a5eb;
+    margin-top: 60px;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: #7c6fc4;
+    display: block;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
